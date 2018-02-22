@@ -8,6 +8,13 @@ import json
 
 class Tran:
 	def getSign(self, n):
+		'''
+		description:generate the sign_value
+		param:S->"fanyideskweb"
+		      r->当前时间和1~10随机数生成的值
+		      D->"ebSeFb%=XZ%T[KZ)c(sy!"
+		      n->要查询的内容
+		'''
 		S = "fanyideskweb"
 		r = "" + str(int(time.time()*1000)) + str(int(random.random()*10))
 		D = "ebSeFb%=XZ%T[KZ)c(sy!"
@@ -15,6 +22,9 @@ class Tran:
 		return sign.hexdigest()
 
 	def tranInfo(self, url, formdata):
+		'''
+		description:post传入的formdata到url，抓取翻译后的信息（json格式）
+		'''
 		headers = {
 			"User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
 			"Host":"fanyi.youdao.com",
