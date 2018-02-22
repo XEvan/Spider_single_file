@@ -1,1 +1,2 @@
-# Spider_single_file
+# 版本：Python2.7
+# OS：Ubuntu
