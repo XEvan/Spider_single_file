@@ -1,6 +1,4 @@
-版本：Python2.7
-
-OS：Ubuntu
+OS：Ubuntu + Python2.7
 
 需求：
 使用python爬取有道翻译的翻译结果。
