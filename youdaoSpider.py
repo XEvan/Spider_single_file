@@ -6,6 +6,8 @@ import urllib
 import urllib2
 import json
 
+##public void test()
+
 class Tran:
 	def getSign(self, n):
 		'''
